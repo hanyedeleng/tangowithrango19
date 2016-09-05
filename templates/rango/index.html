@@ -6,6 +6,11 @@
 
     <head>
         <title>Rango</title>
+        {% if user.is_authenticated %}
+            howdy {{ user.username }}!
+        {% else %}
+            hey there parter!
+        {% endif %}
         <!-- CSS -->
         <!-- <link rel="stylesheet" href="{% static "css/base.css" %}" /> -->
         <!-- JavaScript -->
